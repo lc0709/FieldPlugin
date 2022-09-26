@@ -15,10 +15,12 @@ repositories {
     maven("https://mvn.lumine.io/repository/maven-public/")
 
 }
-
+tasks.jar{
+    destinationDir = File("C:\\Users\\CHAN.LEE\\Desktop\\1.19.2-paper\\plugins")
+}
 dependencies {
     implementation("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
-    implementation("io.lumine:Mythic-Dist:5.0.3-SNAPSHOT")
+    implementation("io.lumine:Mythic-Dist:5.1.4-SNAPSHOT")
 }
 
 tasks.getByName<Test>("test") {
